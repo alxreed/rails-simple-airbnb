@@ -1,0 +1,51 @@
+<div class="cover"></div>
+<div class="container margin-top-negative">
+  <div class="flat">
+    <div class="content">
+      <div class="titre">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="descr">
+          <p><%= @flat.description %></p>
+      </div>
+    </div>
+    <div class="book">
+      <div class="little-form">
+        <h4>Book this place !</h4>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">From</span>
+          </div>
+          <input type="text" class="form-control" placeholder="12/10/2019" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">To</span>
+          </div>
+          <input type="text" class="form-control" placeholder="18/10/2019" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Book</button>
+      </div>
+      <div class="details">
+        <h4>Details</h4>
+        <div class="price-guest">
+          <div class="guest">
+            <p><%= @flat.number_of_guests %> <i class="fas fa-user"></i></p>
+          </div>
+          <div class="price">
+            <p><%= @flat.price_per_night %> <i class="fas fa-dollar-sign"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="share">
+        <p>Share</p>
+        <div class="social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
